@@ -1,0 +1,105 @@
+/* Estilos gerais para o container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Estilos específicos para o validador de senha */
+#password {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+#feedback-senha {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#feedback-senha ul {
+    list-style: none;
+    padding: 0;
+}
+
+#feedback-senha li {
+    padding: 5px 0;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+/* Classes que o JS irá alternar */
+.invalid {
+    color: #dc3545; /* Vermelho */
+    font-weight: normal;
+}
+
+.valid {
+    color: #28a745; /* Verde */
+    font-weight: bold;
+}
+
+#passwordStrength {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* NOVO CSS PARA ALINHAR INPUT E BOTÃO */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#password {
+    flex-grow: 1; /* Faz o input ocupar o espaço restante */
+    margin-bottom: 0; /* Remove a margem de baixo do input que estava fora do grupo */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#togglePassword {
+    /* Estilo básico do botão */
+    background-color: #ccc;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 14px;
+}
+
+#togglePassword:hover {
+    background-color: #bbb;
+}

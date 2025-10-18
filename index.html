@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Senha (Regex)</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <main class="project-container">
+        <h1>Validador de Senha (Regex & Lógica)</h1>
+        
+        <label for="password">Digite sua Senha:</label>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Mínimo 8 caracteres">
+          <button id="togglePassword" type="button">Mostrar</button> 
+        </div>
+        
+        <section id="feedback-senha">
+            <p>A senha deve conter:</p>
+            <ul>
+                <li id="ruleLength" class="invalid">No mínimo 8 caracteres</li>
+                <li id="ruleNumber" class="invalid">Um número (0-9)</li>
+                <li id="ruleUpper" class="invalid">Uma letra maiúscula (A-Z)</li>
+                <li id="ruleSpecial" class="invalid">Um caractere especial (!, @, #, $, etc.)</li>
+            </ul>
+            <p id="passwordStrength"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
